@@ -33,7 +33,7 @@ form.addEventListener('submit', (e) => {
 });
 
 // Send user's name to the server when they join
-// const name = prompt("Enter your name to join") || "Anonymous"; // Prompt for name, default to 'Anonymous' if empty
+const name = prompt("Enter your name to join") || "Anonymous"; // Prompt for name, default to 'Anonymous' if empty
 socket.emit('new-user-joined', name);
 
 // When a new user joins the chat
